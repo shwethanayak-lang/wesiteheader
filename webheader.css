@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container{
+ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOd6FrSnfXnwjdfzsjTpmHA1yl-Kw1jN_aJQ&usqp=CAU");
+ background-repeat: no-repeat;
+ width:100%;
+ height:auto;
+ background-position: center;
+ background-size:cover;
+ padding:0 5%;
+}
+.navheader{
+  height:12%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+}
+.Logo{
+  width:45px;
+  height:60px;
+  float:left;
+  cursor: pointer;
+  margin-left:70px;
+  margin-top:10px;
+}
+.menu-icon{
+background-color:#fff;
+cursor: pointer;
+width:25px;
+background-color:#eee;
+margin-left:30px;
+}
+nav{ 
+  flex:1;
+  text-align:right;
+}
+nav ul li {
+  list-style: none;
+  display:inline-block;
+  margin-left:60px;
+}
+nav ul li a{
+  text-decoration:none;
+  color:#fff;
+  font-size:18px;
+}
+nav ul li a:hover{
+  background-color: #6993f0;
+  color:#05425e;
+}
+.textandcards{
+  display:flex;
+  height: 88%;
+  margin-top:50px;
+  margin-left:100px;
+  align-items:center;
+}
+.textandcards__info{
+  flex-basis:65%;
+}
+.textandcards__info p{
+color:#fff;
+font-size:15px; 
+line-height:20px;
+}
+.textandcards__info h1{
+color: #fff;
+font-size:60px;
+}
+button{
+color:#000;
+padding:15px 50px;
+font-size: 16px;
+align-items: center;
+border:0;
+border-radius: 20px;
+background-color:#eee;
+font-family: 'Courier New', Courier, monospace;
+font-weight:600;
+cursor:pointer;
+outline:none;
+margin-top:30px;
+}
+.textandcards__boxes{
+  margin:20px;
+  }
+
+.card{
+  display: inline-block;
+  background-repeat:no-repeat;
+  position:relative;
+  width:200px;
+  height:230px;  
+  margin: 10px 25px;
+  border-radius:10%;
+  cursor:pointer;
+  background-position:center;
+  background-size:cover;
+  
+  }
+  .textandcards__boxes p,h2{
+   position:absolute;
+   top:10px;
+   left: 10px;
+   color:#3B1034;
+  } 
+  .textandcards__boxes p{
+    top:45px;
+  }
+ 
+.card1{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Kapu_Beach_Lighthouse_.jpg/1200px-Kapu_Beach_Lighthouse_.jpg");
+}
+
+.card2{
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sunrise_at_Malpe_Beach.jpg/220px-Sunrise_at_Malpe_Beach.jpg");
+}
+.card3{
+  background-image: url("https://www.karnatakatourism.org/wp-content/uploads/2021/02/my-experience-at-tannirbhav-beach-park-karnataka.jpg");
+}
+.card4{
+  background-image: url("https://static.toiimg.com/photo/msid-59578076,width-96,height-65.cms");
+}
+
+.card:hover{
+  transform: translateY(10px);
+  transition: all 0.35s ease-in;
+  opacity:70%;
+  /* width: 100% !important; */
+}
+h2{
+  text-shadow: 0 0 2px #000;
+}
+
+@media screen and (min-width:564px) and (max-width:1024px){
+
+  .textandcards__info{
+   margin-left: 30px;
+  }
+  .textandcards{
+    display:flex;
+    flex-wrap: wrap;
+  }
+ 
+  .navheader{
+    display:none;
+  }
+ 
+}
+@media screen and (max-width:564px){
+
+  .textandcards{
+    display:flex;
+    flex-wrap: wrap;
+ 
+  }
+}
